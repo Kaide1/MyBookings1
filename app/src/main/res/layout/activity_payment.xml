@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@color/background1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/searchview_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Event">
+
+        </androidx.appcompat.widget.SearchView>
+
+        <Button
+            android:id="@+id/homepage_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:backgroundTint="#4f4f4f"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            ></Button>
+        <Button
+            android:id="@+id/homepage_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4f4f4f"
+            android:layout_marginTop="-48dp"
+            android:text="Profile"
+            android:textColor="#ffffff"
+            ></Button>
+        <Button
+            android:id="@+id/homepage_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#4f4f4f"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-48dp"
+            ></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bookings"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"></TextView>
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/beerland_image"
+
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beerland Festival"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            ></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/loginbackground1"
+            android:defaultFocusHighlightEnabled="true"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/payment_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/loginbackground1"
+                android:drawableTint="#000000"
+                android:inputType="textPersonName"
+                android:hint="Name: "
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:textColor="#000000"
+                ></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Click below for payment mode"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"></TextView>
+
+        <Spinner
+            android:id="@+id/payment_mode_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/loginbackground1"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center_horizontal"
+            android:text="Phone Number"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/loginbackground1"
+            android:defaultFocusHighlightEnabled="true"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:prefixTextColor="#000000"
+            app:prefixText="+265"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/payment_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/loginbackground1"
+                android:drawableTint="#000000"
+                android:maxLength="9"
+                android:hint="Phone: "
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:textColor="#000000"
+                ></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ffffff"
+            android:text="MAKE PAYMENT"
+            android:textColor="#000000"
+            android:id="@+id/makePaymentButton"
+            ></Button>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

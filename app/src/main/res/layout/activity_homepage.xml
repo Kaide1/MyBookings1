@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Homepage"
+    android:background="@color/background1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Event"
+
+            android:background="@drawable/searchview_background"
+            >
+
+        </androidx.appcompat.widget.SearchView>
+
+
+        <Button
+            android:id="@+id/homepage_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:backgroundTint="#4f4f4f"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            ></Button>
+        <Button
+            android:id="@+id/homepage_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4f4f4f"
+            android:layout_marginTop="-48dp"
+            android:text="Profile"
+            android:textColor="#ffffff"
+            ></Button>
+        <Button
+            android:id="@+id/homepage_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#4f4f4f"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-48dp"
+            ></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Popular Events"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/beerland_image"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beerland Festival"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginTop="-1dp"
+            ></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4f4f4f"
+            android:text="View"
+            android:textColor="#ffffff"
+            android:id="@+id/homepage_btn_1"
+            ></Button>
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shutdown_image"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="-30dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2021 Shutdown"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginTop="-25dp"
+            ></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4f4f4f"
+            android:text="View"
+            android:textColor="#ffffff"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

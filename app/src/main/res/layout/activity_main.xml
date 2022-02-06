@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/background1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fiesta_image1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/android_image"></ImageView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            android:background="@color/loginbackground1"
+            android:defaultFocusHighlightEnabled="true"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/loginbackground1"
+                android:drawableTint="#000000"
+                android:inputType="textPersonName"
+                android:hint="Email"
+                android:textColorHighlight="#000000"
+                android:textColor="#000000"
+                ></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:background="@color/loginbackground1"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            android:defaultFocusHighlightEnabled="true"
+            app:startIconTint="@color/black"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/loginbackground1"
+                android:drawableTint="#000000"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+
+                ></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="#fff"
+            android:gravity="right"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgotpassword"
+
+            ></TextView>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#C4C4C4"
+            android:text="Login"
+            android:textColor="#000000"></Button>
+
+
+    <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:width="160dp"
+            android:gravity="center"
+            android:text="Do not have an account?"
+            android:textColor="#FFFFFF"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="160dp"
+            android:gravity="center"
+            android:text=" Register with us"
+            android:textColor="#FFFFFF"
+
+            ></TextView>
+
+            -->
+
+
+        <Button
+            android:id="@+id/RegisterPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#C4C4C4"
+            android:text="DON'T HAVE AN ACCOUNT?"
+            android:textColor="#000000"
+
+            ></Button>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
