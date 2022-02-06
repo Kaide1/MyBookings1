@@ -87,7 +87,7 @@ class UserProfile : AppCompatActivity() {
 
             if(task.isSuccessful)
             {
-                Toast.makeText(this, "Username Updated", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Username Updated.", Toast.LENGTH_LONG).show()
             }
 
         }
