@@ -90,10 +90,24 @@ class Payment : AppCompatActivity() {
             username.requestFocus()
             return
         }
+        if(nam.length < 4)
+        {
+            username.error = "Nname can not be less than 4 characters"
+            username.requestFocus()
+            return
+        }
+
 
         if(phone.isEmpty())
         {
             number.error = "Number is needed"
+            number.requestFocus()
+            return
+        }
+
+        if(phone.length < 9)
+        {
+            number.error = "Invalid phone number"
             number.requestFocus()
             return
         }

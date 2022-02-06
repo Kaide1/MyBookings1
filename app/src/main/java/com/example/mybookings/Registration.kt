@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -38,6 +39,7 @@ class Registration : AppCompatActivity() {
         registerBtn.setOnClickListener {
             signUpUser()
 
+
        }
 
         registerBackBtn.setOnClickListener {
@@ -50,6 +52,7 @@ class Registration : AppCompatActivity() {
     }
 
 
+
     private fun signUpUser()
     {
         val name = usernameR.text.toString()
@@ -59,6 +62,13 @@ class Registration : AppCompatActivity() {
         if(name.isEmpty())
         {
             usernameR.error = "Please enter username"
+            usernameR.requestFocus()
+            return
+        }
+
+        if(name.length < 4)
+        {
+            usernameR.error = "Username can not be less than 4 characters"
             usernameR.requestFocus()
             return
         }
@@ -88,6 +98,12 @@ class Registration : AppCompatActivity() {
 
 
         }
+        if(pass.length < 8)
+        {
+                passwordR.error = "password can't be less than 8 characters"
+            passwordR.requestFocus()
+            return
+        }
 
 
 
@@ -96,7 +112,7 @@ class Registration : AppCompatActivity() {
                 if (task.isSuccessful) {
 
                     Toast.makeText(baseContext, "Sign Up successful", Toast.LENGTH_SHORT).show()
-                    //val firebaseUser : FirebaseUser = task.result!!.user!!
+
 
                     val int1 = Intent(this, Homepage::class.java)
                     startActivity(int1)
@@ -127,6 +143,8 @@ class Registration : AppCompatActivity() {
 
 
     }
+
+
 
 
 }

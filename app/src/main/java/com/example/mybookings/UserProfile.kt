@@ -75,6 +75,8 @@ class UserProfile : AppCompatActivity() {
             username.requestFocus()
             email.requestFocus()
             password.requestFocus()
+
+            return
         }
 
 
