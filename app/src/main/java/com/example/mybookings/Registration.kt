@@ -113,6 +113,16 @@ class Registration : AppCompatActivity() {
 
                     Toast.makeText(baseContext, "Sign Up successful", Toast.LENGTH_SHORT).show()
 
+                    val ref = FirebaseDatabase.getInstance().getReference("Users")
+                    val userId = ref.push().key
+
+                    val user = Users(userId, name , mail, pass)
+
+                    ref.child(userId.toString()).setValue(user).addOnCompleteListener{
+                        Toast.makeText(applicationContext, "Saved Successfully", Toast.LENGTH_LONG).show()
+
+                    }
+
 
                     val int1 = Intent(this, Homepage::class.java)
                     startActivity(int1)
@@ -130,15 +140,7 @@ class Registration : AppCompatActivity() {
 
         //realtime database
 
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
-        val userId = ref.push().key
 
-        val user = Users(userId, name , mail, pass)
-
-            ref.child(userId.toString()).setValue(user).addOnCompleteListener{
-                        Toast.makeText(applicationContext, "Saved Successfully", Toast.LENGTH_LONG).show()
-
-        }
 
 
 

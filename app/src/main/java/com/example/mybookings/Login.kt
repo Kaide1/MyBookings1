@@ -50,7 +50,7 @@ class Login : AppCompatActivity() {
         forgotPassword.setOnClickListener {
 
             val builder : AlertDialog.Builder = AlertDialog.Builder(this)
-            builder.setTitle("Forgot Password")
+            builder.setTitle("Forgot Password? Enter Email Address to Reset Password")
             val view : View = layoutInflater.inflate(R.layout.forgot_password_dialog, null)
             val username = view.findViewById<EditText>(R.id.forgotPasswordDialog)
             builder.setView(view)
