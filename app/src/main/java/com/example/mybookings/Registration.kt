@@ -100,7 +100,7 @@ class Registration : AppCompatActivity() {
         }
         if(pass.length < 8)
         {
-                passwordR.error = "password can't be less than 8 characters"
+            passwordR.error = "password can't be less than 8 characters"
             passwordR.requestFocus()
             return
         }
