@@ -1,2 +1,2 @@
-## TICKECT BOOKING SYSTEM ##
+## TICKET BOOKING SYSTEM ##
 - This is the description
